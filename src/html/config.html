@@ -1,16 +1,122 @@
 <section class="settings">
   <h2 class="settings-heading">Settings for kintone-post-app2thread</h2>
-  <p class="kintoneplugin-desc">This message is displayed on the app page after the app has been updated.</p>
   <form class="js-submit-settings">
+    <p class="kintoneplugin-desc">
+      プラグイン適用アプリと、コメント投稿先スペースへのアクセス権がある <br>
+      ユーザーの認証情報を登録してください。 <br>
+      ※このユーザーでスレッドにコメントが投稿されます。<br>
+    </p>
     <p class="kintoneplugin-row">
-      <label for="message">
-        Message:
-        <input type="text" class="js-text-message kintoneplugin-input-text">
+      <label for="userID">
+        User ID: <br>
+        <input type="text" class="js-text-userid kintoneplugin-input-text"><br>
+      </label>
+    </p>
+    <p class="kintoneplugin-row">
+      <label for="Password">
+        Password: <br>
+        <input type="password" class="js-text-password kintoneplugin-input-text"><br>
+      </label>
+    </p>
+    <p class="kintoneplugin-desc">
+      投稿先スペースのスペースIDとスレッドIDを入力してください。<br>
+      ※スペースIDとスレッドIDの確認方法：<br>
+      それぞれ、投稿先スレッドのURLに記載されている以下の数字です。<br>
+      https://XXXXX.cybozu.com/k/#/space/{スペースID}/thread/{スレッドID}
+    </p>
+    <p class="kintoneplugin-row">
+      <label for="space">
+        Space ID: <br>
+        <input type="text" class="js-text-space kintoneplugin-input-text"><br>
+      </label>
+    </p>
+    <p class="kintoneplugin-row">
+      <label for="thread">
+        Thread ID: <br>
+        <input type="text" class="js-text-thread kintoneplugin-input-text"><br>
+      </label>
+    </p>
+    <p class="kintoneplugin-desc">
+      コメントを投稿する際にメンション先を指定する場合は、<br>
+      メンション先を入力して、メンション先のタイプを選択してください。
+    </p>
+    <p class="kintoneplugin-row">
+      <label for="mention">
+        Mention: <br>
+        <input type="text" class="js-text-mention-code kintoneplugin-input-text"><br>
+      </label>
+    </p>
+    <div class="kintoneplugin-input-radio">
+      <span class="kintoneplugin-input-radio-item js-radio-mention-type">
+        <input type="radio" name="radio" value="USER" id="radio-0" checked="">
+        <label for="radio-0">USER</label>
+      </span>
+      <span class="kintoneplugin-input-radio-item js-radio-mention-type">
+        <input type="radio" name="radio" value="ORGANIZATION" id="radio-1">
+        <label for="radio-1">ORGANIZATION</label>
+      </span>
+      <span class="kintoneplugin-input-radio-item js-radio-mention-type">
+        <input type="radio" name="radio" value="GROUP" id="radio-2">
+        <label for="radio-2">GROUP</label>
+      </span>
+    </div>
+
+    <p class="kintoneplugin-desc">
+      スレッドのコメントに投稿するフィールドを指定してください。(5つまで)<br>
+    </p>
+    <p class="kintoneplugin-row">
+      <label for="field-1">
+        Field 1: 
+      </label><br>
+      <select class="kintoneplugin-dropdown js-dropdown-field">
+      </select>
+    </p>
+    <p class="kintoneplugin-row">
+      <label for="field-2">
+        Field 2: 
+      </label><br>
+      <select class="kintoneplugin-dropdown js-dropdown-field">
+      </select>
+    </p>
+    <p class="kintoneplugin-row">
+      <label for="field-3">
+        Field 3: 
+      </label><br>
+      <select class="kintoneplugin-dropdown js-dropdown-field">
+      </select>
+    </p>
+    <p class="kintoneplugin-row">
+      <label for="field-4">
+        Field 4: 
+      </label><br>
+      <select class="kintoneplugin-dropdown js-dropdown-field">
+      </select>
+    </p>
+    <p class="kintoneplugin-row">
+      <label for="field-5">
+        Field 5: 
+      </label><br>
+      <select class="kintoneplugin-dropdown js-dropdown-field">
+      </select>
+    </p>
+    <p class="kintoneplugin-desc">
+      スレッドに投稿済みかどうかを確認するチェックボックスのフィールドコードと項目を入力してください。<br>
+    </p>
+    <p class="kintoneplugin-row">
+      <label for="checkboxCode">
+        FieldCode (CheckBox): <br>
+        <input type="text" class="js-text-checkbox-code kintoneplugin-input-text"><br>
+      </label>
+    </p>
+    <p class="kintoneplugin-row">
+      <label for="checkboxOption">
+        Option (CheckBox): <br>
+        <input type="text" class="js-text-checkbox-option kintoneplugin-input-text"><br>
       </label>
     </p>
     <p class="kintoneplugin-row">
         <button type="button" class="js-cancel-button kintoneplugin-button-dialog-cancel">Cancel</button>
         <button class="kintoneplugin-button-dialog-ok">Save</button>
     </p>
-  </form>
+ </form>
 </section>
