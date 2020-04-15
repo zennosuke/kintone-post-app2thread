@@ -102,12 +102,10 @@ jQuery.noConflict();
         body: JSON.stringify(BODY),
       })
         .then(() => {
-          // alert('本レコードの内容がスレッドに投稿されました。');
           record[PLUGIN_CONFIG.checkboxCode].value[0] = PLUGIN_CONFIG.checkboxOption;
           resolve(event);
         })
         .catch((resp) => {
-          // TODO: 失敗した際に、アラートを出す
           event.error = resp.message;
           reject(event);
         });

@@ -50,7 +50,7 @@ jQuery.noConflict();
       });
     })
     .catch((err) => {
-      // console.log(err);
+      alert('フォームを取得できませんでした。\nリロードしてください。')
     });
 
   // 既に保持している設定情報を反映
@@ -58,7 +58,7 @@ jQuery.noConflict();
     fieldElements.$userid.val(config.userid);
   }
   if (config.password) {
-    fieldElements.$password.val(config.$password);
+    fieldElements.$password.val(config.password);
   }
   if (config.space) {
     fieldElements.$space.val(config.space);
