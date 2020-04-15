@@ -18,11 +18,9 @@ $ kintone-plugin-packer src --out dist/plugin.zip
 $ npm run upload
 ```
 
-[kintone-plugin-packer]
-(https://developer.cybozu.io/hc/ja/articles/360000910783)
+[kintone-plugin-packer](https://developer.cybozu.io/hc/ja/articles/360000910783)
 
-[kintoneプラグイン開発手順]
-(https://developer.cybozu.io/hc/ja/articles/203455680)
+[kintoneプラグイン開発手順](https://developer.cybozu.io/hc/ja/articles/203455680)
 
 ## Licence
 
