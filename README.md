@@ -1,6 +1,6 @@
 # kintone-post-app2thread
 
-Kintone plugin which post a record data to thread in space when you submit the record.
+The kintone-post-app2thread is a intone plugin which post a record data to thread in space when you submit the record.
 
 ## Requirement
 
